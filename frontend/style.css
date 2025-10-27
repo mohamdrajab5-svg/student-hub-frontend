@@ -1,0 +1,38 @@
+.slogan {
+    opacity: 70%;
+    font-size: large;
+}
+
+header {
+    padding: 10px;
+    background-color: #B6D0E2;
+    text-align: center;
+}
+
+.button {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: #6082B6;
+    border-radius: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #5183cd;
+}
