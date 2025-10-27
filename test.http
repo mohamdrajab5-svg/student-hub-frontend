@@ -1,0 +1,57 @@
+### ---------------------------
+### 🧪 TEST 1: Register a New User
+# @name registerUser
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "password123"
+}
+
+### ---------------------------
+### 🔑 TEST 2: Login as That User
+# @name loginUser
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+
+### ---------------------------
+### 📝 TEST 3: Submit a Contact Form
+POST http://localhost:5000/api/contact
+Content-Type: application/json
+
+{
+  "name": "Another Person",
+  "email": "info@example.com",
+  "message": "This is a test message from the contact form!"
+}
+
+### ---------------------------
+### 📰 TEST 4: Get All Posts (Dynamic Content)
+# (This will be empty at first)
+GET http://localhost:5000/api/posts
+
+### ---------------------------
+### 🔒 TEST 5: Create a New Post (Protected)
+# @name createPost
+#
+# ❗️INSTRUCTION:
+# 1. Run the "Login" (TEST 2) request first.
+# 2. Copy the "token" from the response.
+# 3. Paste it here after "Bearer ".
+#
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer <YOUR_TOKEN_HERE>
+
+{
+  "title": "My First Event",
+  "body": "This is the body text for my first event post.",
+  "category": "Events"
+}
