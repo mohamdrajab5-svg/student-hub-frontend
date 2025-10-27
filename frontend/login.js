@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // 4. Send the data to your backend server's /api/auth/login "door"
             // (Make sure your backend server is running!)
-            const response = await fetch('http://localhost:5000/api/auth/login', {
+            const response = await fetch('https://student-hub-backend-dij3.onrender.com/api/auth/login', {
                 method: 'POST', // We are SENDING data, so we use POST
                 headers: {
                     'Content-Type': 'application/json',

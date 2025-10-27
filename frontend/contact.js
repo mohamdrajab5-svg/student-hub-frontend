@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 1. Send data to the 'contact' endpoint
-            const response = await fetch('http://localhost:5000/api/contact', {
+            const response = await fetch('https://student-hub-backend-dij3.onrender.com/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

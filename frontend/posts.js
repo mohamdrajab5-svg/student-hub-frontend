@@ -8,7 +8,7 @@ async function loadPosts() {
 
     try {
         // 1. Fetch data from the 'posts' endpoint (default is GET)
-        const response = await fetch('http://localhost:5000/api/posts');
+        const response = await fetch('https://student-hub-backend-dij3.onrender.com/api/posts');
         const posts = await response.json(); // Get the array of posts
 
         // 2. Clear the "Loading..." message
