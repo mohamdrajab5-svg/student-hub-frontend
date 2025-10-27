@@ -8,7 +8,10 @@ connectDB()
 const app = express();
 const PORT = 5000; 
 
-app.use(cors()); 
+const corsOptions = {
+  origin: "https://mohamdrajab5-svg.github.io"
+};
+app.use(cors(corsOptions));
 app.use(express.json()); 
 
 app.get('/', (req, res) => {
